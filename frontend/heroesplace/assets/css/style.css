@@ -518,7 +518,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: rgb(156, 141, 141);
+  color: rgb(97, 93, 93);
 }
 
 #hero .carousel-control-prev, #hero .carousel-control-next {
@@ -673,6 +673,10 @@ section {
 
 .about .container {
   position: relative;
+}
+
+#ge_03{
+  color:black;
 }
 
 .about .content h3 {
@@ -1015,12 +1019,12 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #05579e;
+  color: black;
   transition: 0.3s;
 }
 
 .services .icon-box h4 a:hover {
-  color: #0880e8;
+  color: black;
 }
 
 .services .icon-box p {
@@ -1419,7 +1423,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #75bdfa;
+  color:#f1a40a;
 }
 
 .faq .faq-list .icon-show, .faq .faq-list .icon-close {
@@ -1439,11 +1443,11 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color: #f1a40a;
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #0880e8;
+  color: #f1a40a;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1488,7 +1492,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  background: #0880e8;
+  background: #f1a40a;
   color: #fff;
   float: left;
   width: 44px;
@@ -1505,7 +1509,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 5px;
-  color: #043c6d;
+  color: #f1a40a;
 }
 
 .contact .info p {
