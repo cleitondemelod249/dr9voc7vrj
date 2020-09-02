@@ -6,8 +6,10 @@
 */
 
 /*Douglas/alteração ============*/
-.ge_01{
-  float: left;
+#ge_01{
+  color: black;
+  background: #f1a40a;
+  border-radius: 20%;
 }
 
 #ge_02{
@@ -526,7 +528,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
-  background: none;
+  background: #f1a40a;
   font-size: 48px;
   line-height: 1;
   width: auto;
@@ -544,7 +546,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
-  color: rgb(156, 141, 141);
+  color: rgb(0, 0, 0);
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #f6b024;
@@ -552,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-get-started:hover {
   background: #f6b024;
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
@@ -721,7 +723,7 @@ section {
   border-radius: 5px;
   transition: 0.3s;
   line-height: 1;
-  color: rgb(156, 141, 141);;
+  color: black;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   margin-top: 6px;
@@ -730,7 +732,7 @@ section {
 
 .about .content .btn-learn-more:hover {
   background:#f1a40a;
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
@@ -775,7 +777,7 @@ section {
 }
 
 .clients .owl-dot.active {
-  background-color: #0880e8 !important;
+  background-color:#f1a40a !important;
 }
 
 /*--------------------------------------------------------------
@@ -845,7 +847,7 @@ section {
 }
 
 .why-us .accordion-list span {
-  color: #0880e8;
+  color: #f1a40a;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
@@ -872,7 +874,7 @@ section {
 }
 
 .why-us .accordion-list a.collapsed:hover {
-  color: #0880e8;
+  color:#f1a40a;
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
@@ -886,7 +888,7 @@ section {
 .why-us .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#0880e8 50%, rgba(8, 128, 232, 0.4) 52%);
+  background: radial-gradient(#e8ac08 50%, rgba(232, 210, 8, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -927,14 +929,14 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(8, 128, 232, 0.7);
+  border: 5px solid #f1a40a;
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
 }
 
 .why-us .play-btn:hover::after {
-  border-left: 15px solid #0880e8;
+  border-left: 15px solid #f1a40a;
   transform: scale(20);
 }
 
@@ -1038,19 +1040,19 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(5, 74, 133, 0.8), rgba(5, 74, 133, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(133, 114, 5, 0.8), rgba(133, 103, 5, 0.9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
 
 .cta h3 {
-  color: #fff;
+  color: black;
   font-size: 28px;
   font-weight: 700;
 }
 
 .cta p {
-  color: #fff;
+  color: black;
 }
 
 .cta .cta-btn {
@@ -1066,7 +1068,7 @@ section {
   margin: 10px;
   border-radius: 50px;
   border: 2px solid #f6b024;
-  color: #fff;
+  color: Black;
 }
 
 .cta .cta-btn:hover {
