@@ -16,6 +16,19 @@
   color: black;
 }
 
+#btn_btn_primary{
+  float: left;
+  background: blue;
+  border-radius: 20px;
+}
+
+#btn_btn_secondary{
+  float: left;
+  margin-left: 2%;
+  background: blue;
+  border-radius: 20px;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -781,315 +794,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
---------------------------------------------------------------*/
-.why-us {
-  background: #f1f8ff;
-  padding: 0;
-}
-
-.why-us .content {
-  padding: 60px 100px 0 100px;
-}
-
-.why-us .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-}
-
-.why-us .content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 5px;
-}
-
-.why-us .content p {
-  font-size: 15px;
-  color: #848484;
-}
-
-.why-us .video-box {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 400px;
-  position: relative;
-}
-
-.why-us .accordion-list {
-  padding: 0 100px 60px 100px;
-}
-
-.why-us .accordion-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.why-us .accordion-list li + li {
-  margin-top: 15px;
-}
-
-.why-us .accordion-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-}
-
-.why-us .accordion-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding-right: 30px;
-  outline: none;
-}
-
-.why-us .accordion-list span {
-  color: #f1a40a;
-  font-weight: 600;
-  font-size: 18px;
-  padding-right: 10px;
-}
-
-.why-us .accordion-list i {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.why-us .accordion-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.why-us .accordion-list .icon-show {
-  display: none;
-}
-
-.why-us .accordion-list a.collapsed {
-  color: #343a40;
-}
-
-.why-us .accordion-list a.collapsed:hover {
-  color:#f1a40a;
-}
-
-.why-us .accordion-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.why-us .accordion-list a.collapsed .icon-close {
-  display: none;
-}
-
-.why-us .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#e8ac08 50%, rgba(232, 210, 8, 0.4) 52%);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-  overflow: hidden;
-}
-
-.why-us .play-btn::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.why-us .play-btn::before {
-  content: '';
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid #f1a40a;
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-.why-us .play-btn:hover::after {
-  border-left: 15px solid #f1a40a;
-  transform: scale(20);
-}
-
-.why-us .play-btn:hover::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-  animation: none;
-  border-radius: 0;
-}
-
-@media (max-width: 1024px) {
-  .why-us .content, .why-us .accordion-list {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  .why-us .content {
-    padding-top: 30px;
-  }
-  .why-us .accordion-list {
-    padding-bottom: 30px;
-  }
-}
-
-@-webkit-keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  margin-bottom: 20px;
-  padding: 50px 40px;
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.services .icon-box i {
-  float: left;
-  color: #f6b024;
-  font-size: 40px;
-}
-
-.services .icon-box h4 {
-  margin-left: 70px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .icon-box h4 a {
-  color: black;
-  transition: 0.3s;
-}
-
-.services .icon-box h4 a:hover {
-  color: black;
-}
-
-.services .icon-box p {
-  margin-left: 70px;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
-.cta {
-  background: linear-gradient(rgba(133, 114, 5, 0.8), rgba(133, 103, 5, 0.9)), url("../img/cta-bg.jpg") fixed center center;
-  background-size: cover;
-  padding: 120px 0;
-}
-
-.cta h3 {
-  color: black;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.cta p {
-  color: black;
-}
-
-.cta .cta-btn {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  padding: 8px 26px;
-  border-radius: 2px;
-  transition: 0.5s;
-  margin: 10px;
-  border-radius: 50px;
-  border: 2px solid #f6b024;
-  color: Black;
-}
-
-.cta .cta-btn:hover {
-  background: #f6b024;
-}
-
-@media (max-width: 1024px) {
-  .cta {
-    background-attachment: scroll;
-  }
-}
-
-@media (min-width: 769px) {
-  .cta .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
-/*--------------------------------------------------------------
 # Portfoio
 --------------------------------------------------------------*/
 .portfoio #portfolio-flters {
@@ -1282,204 +986,6 @@ section {
 
 .team .member .social a + a {
   margin-left: 8px;
-}
-
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 18px;
-  font-weight: 700;
-  color:   #f1a40a ;
-  background: #f8f8f8;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color:  #f1a40a;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color:  #f1a40a;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background:  #f1a40a;
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 50px;
-  color: black;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .btn-buy:hover {
-  background: #f1a40a;
-}
-
-.pricing .featured h3 {
-  color: #fff;
-  background: #f1a40a;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background:  #f1a40a;
-  color: #fff;
-}
-
-#color_pricing{
-  color:black;
-}
-
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-.faq .faq-list {
-  padding: 0 100px;
-}
-
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li + li {
-  margin-top: 15px;
-}
-
-.faq .faq-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-  position: relative;
-}
-
-#color_section_titler{
-  color: black;
-}
-
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-}
-
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color:#f1a40a;
-}
-
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list a.collapsed {
-  color: black;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #f1a40a;
-}
-
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -2487,4 +1993,94 @@ section {
 
 #footer .credits a {
   color: #f6b024;
+}
+
+/*--------------------------- modal de login  ---------------------------------*/
+
+#exampleModalLabel{
+  margin-left: 43%;
+  color: black;
+  font-style: normal;
+}
+
+#campo_email{
+  color: black;
+  font-style: normal;
+}
+
+#campo_senha{
+  color: black;
+  font-style: normal;
+}
+
+#btn_btn_secondary{
+  width: 20%;
+  border-radius: 20px;
+  background: #f1a40a;
+
+  text-align: center;
+  font-size: 15pt;
+  font-style: normal;
+  color: black;
+}
+
+#bottao_cadastro{
+  width: 30%;
+  border-radius: 20px;
+  background: #f1a40a;
+
+  text-align: center;
+  font-size: 15pt;
+  font-style: normal;
+  color: black;
+}
+
+/* --------------------- tela de cadastro -------------------------*/
+
+#exampleModalLabel{
+  margin-left: 43%;
+  color: black;
+  font-style: normal;
+}
+#exampleInputEmail1{
+  color: black;
+  font-style: normal;
+}
+
+#nome_cadastro{
+  color: black;
+  font-style: normal;
+}
+
+.cadastro{
+  color: black;
+  font-style: normal;
+}
+ 
+#Register{
+  width: 25%;
+  height: 35px;
+  border-radius: 20px;
+  background: #f1a40a;
+
+  text-align: center;
+  font-size: 15pt;
+  font-style: normal;
+  color: black;
+}
+
+#back{
+  width: 20%;
+  height: 35px;
+  border-radius: 20px;
+  background: #f1a40a;
+
+  text-align: center;
+  font-size: 15pt;
+  font-style: normal;
+  color: black;
+}
+
+#modalExemplo01{
+  overflow: auto;
 }
